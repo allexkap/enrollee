@@ -15,4 +15,3 @@ for a, b in enumerate(soup.find_all('table')):
     result.append((min(scores), len(scores), titles[a][9:]))
 result.sort(key=lambda l: l[0] + 1 / l[1], reverse=True)
 print('\n'.join(map(lambda l: '\t'.join(map(str, l)), result)))
-#print(*result, sep='\n')
